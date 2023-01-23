@@ -8,20 +8,20 @@ Clear();
 Write("Enter any numbers separated by space: ");
 
 string[] array = ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries)!;
-
-WriteLine(AboveZeroCalculation(array));
-
-
-
+WriteLine();
+WriteLine($" Quantity of numbers above zero: {AboveZeroCalculation(array)}");
+WriteLine();
 
 
 
 
-int AboveZeroCalculation(string[] arrayCalc)
+
+
+
+int AboveZeroCalculation(string[] MetodArray)
 {
-
     int count = 0;
-    foreach (var element in arrayCalc)
+    foreach (var element in MetodArray)
     {
         if(int.Parse(element) > 0)
         {
